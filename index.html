@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header information -->
+    <header>
+      <h1 id="title">survey form</h1>
+      <p id="description">Please fill this form to improve our services.</p>
+    </header>
+    <!-- Main information -->
+    <main>
+      <div class="form-container">
+        <form action="" id="survey-form">
+          <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" name="age" id="number" placeholder="Age" min="10" max="120" />
+          </div>
+          <div class="form-group">
+            <label>Please select your gender</label>
+            <select name="gender" id="dropdown">
+              <option disabled selected value="Select-your-gender">Select your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group checkboxes">
+            <label>What did you like the most about our hotel?</label>
+            <div class="checkbox-wrapper">
+              <input class="checkbox" name="favorite" type="checkbox" value="bedrooms" />
+              <label class="checkbox">Bedrooms</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input class="checkbox" name="favorite" type="checkbox" value="atmosphere" />
+              <label class="checkbox">Atmosphere</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input class="checkbox" name="favorite" type="checkbox" value="foods" />
+              <label class="checkbox">Foods</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input class="checkbox" name="favorite" type="checkbox" value="cleanliness" />
+              <label class="checkbox">Cleanliness</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input class="checkbox" name="favorite" type="checkbox" value="services" />
+              <label class="checkbox">Services</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="rate">How would you rate our hotel on a scale of 1 to 10?</label>
+            <input type="number" name="rate" id="rate" min="1" max="10" />
+          </div>
+          <div class="form-group">
+            <label for="recommend">Would you recommend our hotel to a friend?</label>
+            <div class="radio-wrapper">
+              <input type="radio" name="recommend" value="definitely" checked />
+              <label>Definitely </label>
+            </div>
+            <div class="radio-wrapper">
+              <input type="radio" name="recommend" value="maybe" />
+              <label>Maybe</label>
+            </div>
+            <div class="radio-wrapper">
+              <input type="radio" name="recommend" value="not-sure" />
+              <label>Not sure</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="suggestion">Any suggestion would be so much apreciated</label>
+            <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="we appreciate any feedback about your experience"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
