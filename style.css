@@ -17,8 +17,9 @@ body::before {
   top: 0;
   left: 0;
   position: fixed;
+  /* Image by Marten Bjork on Unsplash */
   background-image: url(img/bg.jpg);
-  filter: brightness(50%);
+  filter: brightness(40%);
   background-size: cover;
 }
 
@@ -45,13 +46,13 @@ header p {
 
 /* Style for form */
 .form-container {
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 3rem;
   min-height: 80vh;
   max-width: 700px;
-  background: linear-gradient(to right bottom, rgba(35, 57, 77, 0.6), rgba(35, 57, 77, 0.1));
+  background: linear-gradient(to right bottom, rgba(25, 42, 58, 0.5), rgba(28, 45, 61, 0.1));
   border-radius: 1.5rem;
   padding: 3.5rem;
-  backdrop-filter: blur(0.5rem);
 }
 
 .form-group {
@@ -111,6 +112,7 @@ textarea {
   margin-top: 0.3rem;
   padding: 0.5rem 0 0 1rem;
   border-radius: 0.3rem;
+  resize: vertical;
 }
 
 #submit {
